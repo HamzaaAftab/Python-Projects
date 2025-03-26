@@ -5,5 +5,19 @@
         "year": 2024,
         "genre": "Programming",
         "read": false
+    },
+    {
+        "title": "Formal Methods in Iqra University",
+        "author": "Abdul Moeed",
+        "year": 2020,
+        "genre": "IU Ki LIfe",
+        "read": true
+    },
+    {
+        "title": "Formal Methods in Iqra University",
+        "author": "Hamza Aftab",
+        "year": 4,
+        "genre": "IU Ki LIfe",
+        "read": true
     }
 ]

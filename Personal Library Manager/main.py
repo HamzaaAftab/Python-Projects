@@ -112,18 +112,18 @@ def save_books(books):
 
 st.session_state.books = load_books()
 
-# # Display book covers
-# if st.session_state.books:
-#     for book in st.session_state.books:
-#         st.image(get_book_cover(book["title"]), width=150)
-#         st.write("")
-#         st.write(f"**{book['title']}** by {book['author']} ({book['year']}) - {book['genre']} - {'Read' if book['read'] else 'Unread'}")
-#         st.write("")
-#         st.markdown("---")
-#         st.write("")
-#         st.info(f"Cover image fetched from Open Library API.")
-#     else:
-#         st.warning("Your library is empty.")
-#         st.info(f"Cover images fetched from Open Library API.")
+# Display book covers
+if st.session_state.books:
+    for book in st.session_state.books:
+        st.image(get_book_cover(book["title"]), width=150)
+        st.write("")
+        st.write(f"**{book['title']}** by {book['author']} ({book['year']}) - {book['genre']} - {'Read' if book['read'] else 'Unread'}")
+        st.write("")
+        st.markdown("---")
+        st.write("")
+        st.info(f"Cover image fetched from Open Library API.")
+    else:
+        st.warning("Your library is empty.")
+        st.info(f"Cover images fetched from Open Library API.")
 
-# Save books on session state change
+
